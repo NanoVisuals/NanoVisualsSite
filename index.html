@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NanoVisuals — бесплатные визуалы для Minecraft</title>
+<meta name="description" content="NanoVisuals — лаунчер и мод с самыми красивыми бесплатными визуалами для Minecraft. Шейдеры, HD-текстуры, PBR, быстрая установка в один клик.">
+<meta name="theme-color" content="#06060a">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NanoVisuals">
+<meta property="og:title" content="NanoVisuals — самые красивые бесплатные визуалы для Minecraft">
+<meta property="og:description" content="Лаунчер и мод с шейдерами, HD-текстурами и PBR-материалами. Установка в один клик, бесплатно.">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💠</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+  <span class="grid-overlay"></span>
+</div>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#home" class="logo" data-tab="home">
+      <span class="logo-mark">N</span>
+      <span class="logo-text">Nano<em>Visuals</em></span>
+    </a>
+
+    <nav class="nav" id="nav" role="tablist" aria-label="Разделы сайта">
+      <button class="nav-btn is-active" data-tab="home" role="tab" aria-selected="true">Home</button>
+      <button class="nav-btn" data-tab="faq" role="tab" aria-selected="false">FAQ</button>
+      <button class="nav-btn" data-tab="help" role="tab" aria-selected="false">Help</button>
+      <span class="nav-pill" id="navPill" aria-hidden="true"></span>
+    </nav>
+
+    <a class="btn btn-ghost btn-tg-header" href="https://t.me/megalan_mg" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.7 19c-.2 1-.8 1.3-1.6.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6L18.9 6c.4-.3-.1-.5-.6-.2L8.1 12.1 3.6 10.6c-1-.3-1-1 .2-1.4l16.6-6.4c.8-.3 1.5.2 1.5 1.5z"/></svg>
+      <span>Telegram</span>
+    </a>
+  </div>
+</header>
+
+<main class="wrap" id="app">
+
+  <!-- ═══════════════ HOME ═══════════════ -->
+  <section class="page is-active" id="home" data-page="home" role="tabpanel">
+
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="badge">
+          <span class="dot"></span> v2.4 — обновление шейдеров
+        </div>
+        <h1 class="title">
+          Самые красивые<br>
+          <span class="grad">бесплатные визуалы</span><br>
+          для Minecraft
+        </h1>
+        <div class="title-underline" aria-hidden="true"></div>
+        <p class="lead">
+          <b>NanoVisuals</b> — это лаунчер с лучшими <u>бесплатными визуалами</u>.
+          Внутри вы найдёте 20+ функций и разнообразную косметику для игрока и мечей.
+        </p>
+
+        <div class="hero-actions">
+          <!-- Скачивание: NanoLauncher.exe лежит рядом с index.html -->
+          <a class="btn btn-primary btn-lg" href="NanoLauncher.exe" download="NanoLauncher.exe">
+            <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path fill="currentColor" d="M11 3h2v8h3l-4 4-4-4h3V3zM4 17h2v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3h2v3a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-3z"/></svg>
+            Скачать лаунчер
+          </a>
+          <button class="btn btn-ghost btn-lg" data-tab="faq">
+            <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-2h2v2zm1.8-6.3-.9.9c-.7.7-.9 1.1-.9 2.4h-2v-.5c0-1 .4-1.8 1.1-2.5l1.2-1.3c.4-.3.6-.8.6-1.3a2 2 0 1 0-4 0H8a4 4 0 1 1 8 0c0 .8-.3 1.6-.9 2.3z"/></svg>
+            Возможные ошибки
+          </button>
+        </div>
+
+        <div class="stats stats-3">
+          <div class="stat"><b data-count="20" data-suffix="+">0</b><span>функций, которые сделают вашу игру лучше</span></div>
+          <div class="stat"><b data-count="1" data-suffix=" клик">0</b><span>на установку</span></div>
+          <div class="stat"><b data-count="24" data-suffix="/7">0</b><span>поддержка</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="cube-scene">
+          <div class="cube">
+            <div class="face f1"></div>
+            <div class="face f2"></div>
+            <div class="face f3"></div>
+            <div class="face f4"></div>
+            <div class="face f5"></div>
+            <div class="face f6"></div>
+          </div>
+          <div class="glow-ring"></div>
+        </div>
+        <div class="float-chip chip1">20+ функций</div>
+        <div class="float-chip chip2">Косметика</div>
+        <div class="float-chip chip3">1.21.11 Fabric</div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section-head">
+        <h2 class="h2">Что внутри <span class="grad">NanoVisuals</span></h2>
+        <p class="section-sub">Всё, что нужно, чтобы твой мир выглядел как в трейлере. Ставится одним кликом и не тормозит.</p>
+      </div>
+
+      <div class="grid cards">
+        <article class="card">
+          <div class="card-ic orange">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M12 2.6l1.9 5.5 5.5 1.9-5.5 1.9L12 17.4l-1.9-5.5L4.6 10l5.5-1.9L12 2.6z"/><path fill="currentColor" d="M18.4 15.2l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z" opacity=".8"/></svg>
+          </div>
+          <h3>Авто-установка</h3>
+          <p>Лаунчер сам находит папку игры, проверяет файлы, качает нужную Java и ставит мод. Без ручной настройки.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-ic purple">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M11 3h2v8h3l-4 4-4-4h3V3zM4 17h2v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3h2v3a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-3z"/></svg>
+          </div>
+          <h3>Моды с Modrinth</h3>
+          <p>Лаунчер сам скачивает моды с Modrinth и проверяет их совместимость. Без ручной настройки.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-ic green">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </div>
+          <h3>Без тормозов</h3>
+          <p>Оптимизация под GPU: минимальная нагрузка на FPS.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-ic blue">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M12 2 2 8l10 6 10-6-10-6zm0 2.3L18.4 8 12 11.7 5.6 8 12 4.3zM2 12l10 6 10-6-2-1.2-8 4.8-8-4.8L2 12zm0 4 10 6 10-6-2-1.2-8 4.8-8-4.8L2 16z"/></svg>
+          </div>
+          <h3>Версия 1.21.11 Fabric</h3>
+          <p>Поддержка только 1.21.11 Fabric.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2 class="h2">Как это <span class="grad">работает</span></h2>
+        <p class="section-sub">Три шага — и готово. Даже если ты никогда не ставил моды.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Скачай лаунчер</h3>
+          <p>Windows-версия весит мало и запускается двойным кликом. Установка — <b>одна кнопка</b>.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Настрой под себя</h3>
+          <p>Выбери визуалы и косметику, настрой графику под свой ПК — лаунчер подстроится сам.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Играй</h3>
+          <p>Запускай игру через лаунчер. В настройках найди раздел NanoVisuals и выбери пресет.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="banner">
+        <div>
+          <h2 class="h2">Нужна помощь?</h2>
+          <p>Разберись с ошибками установки за минуту в разделе <button class="linklike" data-tab="faq">FAQ</button> или напиши мне напрямую.</p>
+        </div>
+        <div class="banner-actions">
+          <button class="btn btn-primary" data-tab="faq">Открыть FAQ</button>
+          <button class="btn btn-ghost" data-tab="help">Связаться</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ═══════════════ FAQ ═══════════════ -->
+  <section class="page" id="faq" data-page="faq" role="tabpanel" hidden>
+    <div class="page-head">
+      <h1 class="h1">FAQ — <span class="grad">возможные ошибки</span></h1>
+      <p class="lead">Здесь собраны все типовые проблемы с установкой файлов игры, Java и запуском лаунчера. Ищи свою ошибку в поиске или по списку ниже.</p>
+
+      <div class="search">
+        <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.3l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0 0 10 2zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></svg>
+        <input type="text" id="faqSearch" placeholder="Поиск по ошибкам: java, файлы игры, установка..." autocomplete="off">
+        <button class="search-clear" id="faqClear" type="button" aria-label="Очистить">×</button>
+      </div>
+    </div>
+
+    <div class="chips" id="faqFilters">
+      <button class="chip is-active" data-filter="all">Все</button>
+      <button class="chip" data-filter="files">Файлы игры</button>
+      <button class="chip" data-filter="java">Java</button>
+      <button class="chip" data-filter="launch">Запуск</button>
+      <button class="chip" data-filter="install">Установка</button>
+    </div>
+
+    <div class="faq-list" id="faqList">
+
+      <details class="faq" data-cat="files" data-tags="файлы игры установка не установились распаковано повреждено repair">
+        <summary>
+          <span class="faq-ic files">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M3 5a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z"/></svg>
+          </span>
+          <span class="faq-q">Неправильно установились файлы игры</span>
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M7 10l5 5 5-5H7z"/></svg>
+          </span>
+        </summary>
+        <div class="faq-a">
+          <p><b>Симптомы:</b> игра падает при запуске, в логе ошибка вида <code>Missing model</code>, блоки без текстур, чёрный экран, мир не грузится.</p>
+          <ol>
+            <li>Открой лаунчер → вкладка <b>Файлы игры</b> → нажми <b>Проверить и восстановить</b>. Лаунчер сам скачает недостающие файлы.</li>
+            <li>Если папка игры повреждена целиком — переустанови Minecraft через официальный лаунчер (или через лаунчер → <b>Установить игру</b>).</li>
+            <li>Проверь, что у игры хватает места на диске (минимум 4 ГБ) и что путь не содержит кириллицу и спецсимволы.</li>
+            <li>Удали папку <code>versions/&lt;версия&gt;/</code> и запусти установку заново — файлы пересоздадутся.</li>
+          </ol>
+          <p class="hint">⚠️ Не редактируй файлы игры вручную, пока открыт лаунчер — он перезапишет изменения.</p>
+        </div>
+      </details>
+
+      <details class="faq" data-cat="files" data-tags="путь java неправильно указан path jdk home ошибка">
+        <summary>
+          <span class="faq-ic java">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M3 8.5h12.5V14a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8.5z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M15.5 10h1.7a2.8 2.8 0 0 1 0 5.6h-1.7"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M7 2.7c0 1 1 1.2 1 2.2M11 2.7c0 1 1 1.2 1 2.2"/></svg>
+          </span>
+          <span class="faq-q">Неправильно указан путь к Java</span>
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M7 10l5 5 5-5H7z"/></svg>
+          </span>
+        </summary>
+        <div class="faq-a">
+          <p><b>Симптомы:</b> ошибка <code>JAVA_HOME is not set</code>, <code>Invalid Java path</code>, лаунчер не находит Java, кнопка «Запустить» неактивна.</p>
+          <ol>
+            <li>В лаунчере открой <b>Настройки → Java</b>.</li>
+            <li>Нажми <b>Автоопределить</b> — лаунчер просканирует систему и поставит правильный путь сам.</li>
+            <li>Если автоопределение не сработало, укажи папку вручную. Это должна быть папка <b>внутри</b> <code>jdk</code>, а не сама папка <code>java</code>.<br>
+              Правильно: <code>C:\Program Files\Java\jdk-21.0.5</code><br>
+              Неправильно: <code>C:\Program Files\Java\jdk-21.0.5\bin</code></li>
+            <li>Проверь, что по этому пути реально лежит файл <code>bin\java.exe</code>.</li>
+            <li>Нажми <b>Проверить</b> — должна появиться строка вида <code>Java 21 — OK</code>.</li>
+          </ol>
+          <p class="hint">💡 Путь без кавычек и без кириллицы. Не указывай <code>javaw.exe</code> и не компиляторы (IntelliJ IDEA, Eclipse).</p>
+        </div>
+      </details>
+
+      <details class="faq" data-cat="java" data-tags="не та джава версия несовместима 21 fabric">
+        <summary>
+          <span class="faq-ic java">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M3 8.5h12.5V14a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8.5z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M15.5 10h1.7a2.8 2.8 0 0 1 0 5.6h-1.7"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M7 2.7c0 1 1 1.2 1 2.2M11 2.7c0 1 1 1.2 1 2.2"/></svg>
+          </span>
+          <span class="faq-q">Установлена не та Java / несовместимая версия</span>
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M7 10l5 5 5-5H7z"/></svg>
+          </span>
+        </summary>
+        <div class="faq-a">
+          <p><b>Симптомы:</b> <code>UnsupportedClassVersionError</code>, <code>ClassNotFoundException</code>, <code>wrong Java version</code>, игра вылетает сразу при старте.</p>
+          <table class="table">
+            <thead><tr><th>Версия игры</th><th>Нужная Java</th></tr></thead>
+            <tbody>
+              <tr><td>1.21.11 (Fabric)</td><td>Java 21</td></tr>
+            </tbody>
+          </table>
+          <ol>
+            <li>В <b>Настройки → Java</b> выбери <b>Java 21</b> из списка и нажми <b>Применить</b>.</li>
+            <li>Если Java 21 нет — нажми <b>Скачать Java</b> прямо в лаунчере, всё автоматически.</li>
+            <li>Удали старые версии Java из «Программы и компоненты» Windows — лаунчеру нужна только Java 21.</li>
+            <li>В настройках лаунчера проверь <b>«Версия Java по умолчанию для лаунчера»</b> — поставь Java 21.</li>
+          </ol>
+          <p class="hint">💡 Для NanoVisuals нужна именно Java 21 — другие версии не подойдут.</p>
+        </div>
+      </details>
+
+      <details class="faq" data-cat="java" data-tags="java не скачалась загрузка прервалась ошибка скачивания 0 байт">
+        <summary>
+          <span class="faq-ic java">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M3 8.5h12.5V14a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8.5z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M15.5 10h1.7a2.8 2.8 0 0 1 0 5.6h-1.7"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M7 2.7c0 1 1 1.2 1 2.2M11 2.7c0 1 1 1.2 1 2.2"/></svg>
+          </span>
+          <span class="faq-q">Java не скачалась / загрузка прервалась</span>
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M7 10l5 5 5-5H7z"/></svg>
+          </span>
+        </summary>
+        <div class="faq-a">
+          <p><b>Симптомы:</b> прогресс зависает на 0%, ошибка <code>Download failed</code>, файл <code>java.zip</code> весит 0 КБ, папка <code>jdk</code> создалась, но внутри пусто.</p>
+          <ol>
+            <li>Закрой лаунчер, удали недокачанный файл из папки <code>./runtime/</code> и запусти скачивание заново.</li>
+            <li>Отключи VPN/прокси или смени сеть — некоторые провайдеры режут соединение с CDN.</li>
+            <li>Проверь антивирус: он мог заблокировать или удалить файл. Добавь папку лаунчера в исключения.</li>
+            <li>Скачай Java вручную с <b>Adoptium</b> (Temurin 21) и укажи путь вручную в настройках.</li>
+            <li>Освободи минимум 500 МБ на диске, где лежит лаунчер.</li>
+          </ol>
+          <p class="hint">💡 Не качай Java со сомнительных сайтов — нужен именно Temurin/Oracle JDK, а не JRE и не «JavaFX».</p>
+        </div>
+      </details>
+
+      <details class="faq" data-cat="install" data-tags="установка мод не ставится fabric 1.21.11">
+        <summary>
+          <span class="faq-ic launch">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M12 2 3 6v6c0 5 3.8 9.2 9 10 5.2-.8 9-5 9-10V6l-9-4z"/></svg>
+          </span>
+          <span class="faq-q">Мод не устанавливается / ошибка при установке</span>
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M7 10l5 5 5-5H7z"/></svg>
+          </span>
+        </summary>
+        <div class="faq-a">
+          <p><b>Симптомы:</b> «Не удалось установить мод», конфликт модов, мод не появился в игре.</p>
+          <ol>
+            <li>Убедись, что игра запускается на <b>Fabric 1.21.11</b> — NanoVisuals работает только с ним.</li>
+            <li>В лаунчере открой <b>Моды</b> и проверь, что выбран <b>Fabric 1.21.11</b>.</li>
+            <li>Проверь список несовместимых модов — в логе будет строка <code>Incompatible mod set</code> с названиями.</li>
+            <li>Удали мод-конфликт из папки <code>mods</code> вручную и попробуй снова.</li>
+            <li>Если не помогло, перейдите на вкладку Help.</li>
+
+          </ol>
+        </div>
+      </details>
+
+      <details class="faq" data-cat="launch" data-tags="лаунчер не запускается ошибка при запуске windows">
+        <summary>
+          <span class="faq-ic launch">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M12 2 3 6v6c0 5 3.8 9.2 9 10 5.2-.8 9-5 9-10V6l-9-4z"/></svg>
+          </span>
+          <span class="faq-q">Лаунчер не запускается / вылетает при открытии</span>
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M7 10l5 5 5-5H7z"/></svg>
+          </span>
+        </summary>
+        <div class="faq-a">
+          <p><b>Симптомы:</b> окно открылось и сразу закрылось, ошибка <code>JVM</code>, белый экран, <code>cannot find launcher.jar</code>.</p>
+          <ol>
+            <li>Скачай свежую версию лаунчера и запусти от имени администратора.</li>
+            <li>Проверь, что стоит Java 21 — другие версии лаунчер не поддерживает.</li>
+            <li>Добавь папку лаунчера в исключения антивируса и «Защищённого просмотра» Windows.</li>
+            <li>Проверь свободное место: нужно минимум 1 ГБ под кеш и логи.</li>
+            <li>Удали файл <code>launcher.log</code> в папке лаунчера и запусти снова — он пересоздастся.</li>
+            <li>Если не помогло, перейдите на вкладку Help.</li>
+
+          </ol>
+        </div>
+      </details>
+
+      
+      <details class="faq" data-cat="general" data-tags="требования пк видеокарта оперативка">
+        <summary>
+          <span class="faq-ic orange">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm1 4v8h14V8H5zm2 2h5v2H7v-2zm0 3h3v2H7v-2z"/></svg>
+          </span>
+          <span class="faq-q">Требования к ПК</span>
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M7 10l5 5 5-5H7z"/></svg>
+          </span>
+        </summary>
+        <div class="faq-a">
+          <table class="table">
+            <thead><tr><th>Параметр</th><th>Минимум</th><th>Рекомендуется</th></tr></thead>
+            <tbody>
+              <tr><td>ОС</td><td>Windows 10</td><td>Windows 10/11 x64</td></tr>
+              <tr><td>Процессор</td><td>Intel i3 / Ryzen 3</td><td>Intel i5 / Ryzen 5</td></tr>
+              <tr><td>Видеокарта</td><td>GTX 750 Ti</td><td>GTX 1060 / RX 570</td></tr>
+              <tr><td>ОЗУ</td><td>4 ГБ</td><td>8 ГБ и выше</td></tr>
+              <tr><td>Место на диске</td><td>2 ГБ</td><td>6 ГБ</td></tr>
+            </tbody>
+          </table>
+          <p class="hint">💡 На слабых видеокартах автоматически включается облегчённый пресет.</p>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="empty" id="faqEmpty" hidden>
+      <p>Ничего не нашлось по этому запросу.</p>
+      <button class="btn btn-ghost" data-tab="help">Задать вопрос напрямую</button>
+    </div>
+  </section>
+
+  <!-- ═══════════════ HELP ═══════════════ -->
+  <section class="page" id="help" data-page="help" role="tabpanel" hidden>
+    <div class="page-head">
+      <h1 class="h1">Помощь и <span class="grad">связь</span></h1>
+      <p class="lead">Не нашёл решение в FAQ? Напиши мне напрямую — отвечаю быстро и по делу. Лучше всего приложить скриншот ошибки и версию игры.</p>
+    </div>
+
+    <div class="contacts">
+      <div class="contact tg">
+        <div class="contact-top">
+          <span class="contact-ic">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M21.9 4.3 18.7 19c-.2 1-.8 1.3-1.6.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6L18.9 6c.4-.3-.1-.5-.6-.2L8.1 12.1 3.6 10.6c-1-.3-1-1 .2-1.4l16.6-6.4c.8-.3 1.5.2 1.5 1.5z"/></svg>
+          </span>
+          <span class="contact-badge">Telegram</span>
+        </div>
+        <h2>Написать в Telegram</h2>
+        <p>Самый быстрый способ. Задай вопрос в личку — помогу с установкой, Java и подбором шейдеров.</p>
+        <div class="handle">
+          <span class="at">@megalan_mg</span>
+          <button class="copy" data-copy="@megalan_mg" type="button" title="Скопировать ник">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M9 2h9a2 2 0 0 1 2 2v11h-2V4H9V2zM5 6h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>
+            <span>Копировать</span>
+          </button>
+        </div>
+        <a class="contact-link" href="https://t.me/megalan_mg" target="_blank" rel="noopener">
+          <span class="contact-cta">Открыть чат →</span>
+        </a>
+      </div>
+
+      <!-- ⚠️ Discord: замени ссылку ниже на свою — инвайт сервера (https://discord.gg/xxxx)
+           или ссылку на профиль для личных сообщений (https://discord.com/users/ID) -->
+      <div class="contact dc">
+        <div class="contact-top">
+          <span class="contact-ic">
+            <svg viewBox="0 0 24 24" class="ic"><path fill="currentColor" d="M19.3 5.3A16.9 16.9 0 0 0 15.4 4l-.3.5a12.7 12.7 0 0 1 3.7 1.9 15.6 15.6 0 0 0-13.6 0 12.7 12.7 0 0 1 3.7-1.9L8.6 4a16.9 16.9 0 0 0-3.9 1.3C2 9.5 1.3 13.5 1.6 17.4A17 17 0 0 0 6.8 20l.9-1.4a11 11 0 0 1-1.7-.8l.4-.3a12.1 12.1 0 0 0 12.1 0l.4.3a11 11 0 0 1-1.7.8l.9 1.4a17 17 0 0 0 5.3-2.6c.4-4.5-.7-8.4-3.1-12.1zM8.9 15.2c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.8 2.2-1.9 2.2zm6.2 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.8 2.2-1.9 2.2z"/></svg>
+          </span>
+          <span class="contact-badge">Discord</span>
+        </div>
+        <h2>Присоединиться в Discord</h2>
+        <p>Сервер с обсуждениями, гайдами и раздачами пресетов. Там же можно предложить свой шейдер.</p>
+        <div class="handle">
+          <span class="at">MegaLAN Community</span>
+        </div>
+        <a class="contact-link" href="https://discord.gg/megalan_mg" target="_blank" rel="noopener">
+          <span class="contact-cta">Открыть Discord →</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-head">
+        <h2 class="h2">Перед тем как <span class="grad">написать</span></h2>
+        <p class="section-sub">Так я отвечу тебе с первого раза и без лишних уточнений.</p>
+      </div>
+
+      <div class="checklist">
+        <div class="check">
+          <span class="check-num">1</span>
+          <p>Напиши <b>версию игры</b> и <b>версию лаунчера</b> (видна в углу окна).</p>
+        </div>
+        <div class="check">
+          <span class="check-num">2</span>
+          <p>Приложи <b>скриншот ошибки</b> или текст из <code>latest.log</code>.</p>
+        </div>
+        <div class="check">
+          <span class="check-num">3</span>
+          <p>Укажи <b>версию Java</b> из <b>Настроек → Java</b> (если уже смотрел FAQ).</p>
+        </div>
+        <div class="check">
+          <span class="check-num">4</span>
+          <p>Опиши, что делал <b>до ошибки</b> — так я пойму контекст.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div>
+        <h2 class="h2">Сначала загляни в FAQ</h2>
+        <p>Там разобраны почти все частые проблемы: файлы игры, путь к Java, версия Java и сбои загрузки.</p>
+      </div>
+      <div class="banner-actions">
+        <button class="btn btn-primary" data-tab="faq">Открыть FAQ</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">N</span>
+      <span class="logo-text">Nano<em>Visuals</em></span>
+    </div>
+    <p class="footer-note">Неофициальный клиентский мод для Minecraft. Minecraft — товарный знак Mojang Studios.</p>
+    <div class="footer-links">
+      <button class="linklike" data-tab="home">Home</button>
+      <button class="linklike" data-tab="faq">FAQ</button>
+      <button class="linklike" data-tab="help">Help</button>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
